@@ -1,0 +1,7 @@
+openai~=0.27.5
+slack_sdk
+slackClient
+slack_bolt
+tiktoken~=0.3.3
+
+binance~=0.3
