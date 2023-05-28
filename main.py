@@ -18,7 +18,7 @@ def get_data_frame():
     starttime = '5 day ago UTC'
     # interval = '1m'
     interval = '3m'
-    bars = client.get_historical_klines(symbol, interval, starttime)
+    bars = client.futures_historical_klines(symbol, interval, starttime)
 
     for line in bars:  # Keep only first 5 columns, "date" "open" "high" "low" "close"
         del line[5:]
